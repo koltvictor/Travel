@@ -125,11 +125,12 @@ h4 {
 
 .columnA {
   height: 25vh;
+  text-align: center;
 }
 
 .columnB {
   height: 25vh;
-  text-align: right;
+  text-align: center;
   padding: 2rem;
 }
 
