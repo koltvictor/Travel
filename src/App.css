@@ -1,38 +1,135 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+h4 {
+  font-family: 'Aboreto', cursive;
+}
+
+* {
+  font-family: 'Lora', serif;
+}
+
+.logo {
+  padding: 1rem;
+  height: 8vh;
+  position: absolute;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10vh;
+}
+
+.sliderImage {
+  width: 83vh;
+  height: 38vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right-arrow {
+  position: absolute;
+  top: 17vh;
+  right: 20vh;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 17vh;
+  left: 20vh;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+.about {
+  display: flex;
+  justify-content: right;
+  padding: 2rem;
+  background-color: #ececec;
+  border: 2px solid rgb(190, 190, 190);
+}
+
+.itineraryImage {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.centeredText {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.alignRight{
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.benefitsImage{
+  width: 50%;
+  height: 50%;
+  border: 2px solid #000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.column1 {
+  text-align: center;
+  height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column2 {
+  text-align: center;
+  height: 100px;
 }
+
+.column3 {
+  text-align: center;
+  height: 100px;
+}
+
+.columnA {
+  height: 25vh;
+}
+
+.columnB {
+  height: 25vh;
+  text-align: right;
+  padding: 2rem;
+}
+
