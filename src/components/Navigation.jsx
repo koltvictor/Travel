@@ -5,22 +5,19 @@ export default function Navigation() {
 
   return (
     <div>
-      <Nav 
-        className="justify-content-end" 
-        activeKey="/home"
-      >
+      <Nav className="justify-content-end">
         <Nav.Item>
-          <Nav.Link href="/home">Active</Nav.Link>
+          <Nav.Link href="/travel">custom itinerary</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">Link</Nav.Link>
+          <Nav.Link href="/gallery">gallery</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-2">Link</Nav.Link>
+          <Nav.Link eventKey="/about">about</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-3">
-            Disabled
+          <Nav.Link eventKey="/contact">
+            contact
           </Nav.Link>
         </Nav.Item>
       </Nav>

@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import Logo from "./components/Logo";
 
 import { Routes, Route, useLocation } from "react-router-dom";
+import Gallery from "./pages/Gallery";
 
 export default function App() {
   const location = useLocation();
@@ -15,6 +16,7 @@ export default function App() {
       <Routes Location={location} key={location.pathname}>
         <Route exact path="/" element={<Home />} />
         <Route path="/travel" element={<Travel />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </div>
   );

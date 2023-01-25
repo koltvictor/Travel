@@ -5,6 +5,7 @@ import Itinerary from '../components/Itinerary'
 import { SliderData } from '../components/SliderData'
 import Benefits from '../components/Benefits'
 import Contact from '../components/Contact'
+import Elevated from '../components/Elevated'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <About />
         <Itinerary />
         <Benefits />
+        <Elevated />
         <Contact />
     </div>
   )
