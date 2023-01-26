@@ -1,7 +1,10 @@
 import React from 'react'
+import Questions from '../components/Questions'
 
 export default function TravelPage() {
   return (
-    <div><img src="https://i.imgur.com/yANhDR8.png" alt="words"/></div>
+    <div>
+        <Questions />
+    </div>
   )
 }
