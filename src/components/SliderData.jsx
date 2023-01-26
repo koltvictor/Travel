@@ -1,5 +1,8 @@
 export const SliderData = [
     {
+        image: 'https://i.imgur.com/zutMxzK.png'
+    },
+    {
         image: 'https://i.imgur.com/z0PqCX8.png',
         info: 'Iceland'
     },
@@ -24,9 +27,7 @@ export const SliderData = [
     {
         image: 'https://i.imgur.com/28HYg3L.png'
     },
-    {
-        image: 'https://i.imgur.com/zutMxzK.png'
-    },
+
     {
         image: 'https://i.imgur.com/R9C6sIJ.png'
     },
