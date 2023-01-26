@@ -23,5 +23,14 @@ export const SliderData = [
     },
     {
         image: 'https://i.imgur.com/28HYg3L.png'
+    },
+    {
+        image: 'https://i.imgur.com/zutMxzK.png'
+    },
+    {
+        image: 'https://i.imgur.com/R9C6sIJ.png'
+    },
+    {
+        image: 'https://i.imgur.com/DaT2A3h.png'
     }
 ]
