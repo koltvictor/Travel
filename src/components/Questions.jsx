@@ -9,19 +9,21 @@ import {
   MDBCol,
   MDBContainer,
   MDBIcon,
-  MDBRadio,
   MDBRow,
   MDBTextArea,
 } from "mdb-react-ui-kit";
+import CountrySelect from "./CountrySelect";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import styled from 'styled-components'
 
 export default function CardWithFeedback() {
     const [ value, onChange ] = useState(new Date());
     const [ value2, onChange2 ] = useState(new Date())
 
   return (
+    <FormWrapper>
     <MDBContainer>
       <MDBRow className="justify-content-center">
         <MDBCol size="6">
@@ -40,18 +42,28 @@ export default function CardWithFeedback() {
               <hr />
 
               <form className="px-4" action="">
-              <p className="text-center">
+                <p className="text-center">
+                    <strong>Your name:</strong>
+                </p>
+                <MDBTextArea className="mb-4" rows={1} />
+                <p className="text-center">
+                    <strong>Number in your party:</strong> <br/>(please designate number of adults and number of children)
+                </p>
+                <MDBTextArea className="mb-4" rows={1} />
+                <p className="text-center"><strong>Where would you like to go?</strong></p>
+                <CountrySelect />
+                <p className="text-center">
                   <strong>When would you like to depart?</strong>
                 </p>
-                <DatePicker onChange={onChange} value={value} />
+                <DatePicker onChange={onChange} value={value} format="dd/MM/y" />
                 <br/><br/>
                 <p className="text-center">
                   <strong>When would you like to return?</strong>
                 </p>
-                <DatePicker onChange={onChange2} value={value2} />
+                <DatePicker onChange={onChange2} value={value2} format="dd/MM/y" />
                 <br/><br/>
                 <p className="text-center">
-                  <strong>What would you like to do on your trip?</strong>
+                  <strong>Choose some items that describe your trip</strong>
                 </p>
                 <Container>
                     <Row>
@@ -197,10 +209,78 @@ export default function CardWithFeedback() {
                             label="Shopping"
                             className="mb-2"
                             />
+                        </Col>
+                        <Col>
                             <MDBCheckbox
                             name="flexRadioDefault"
                             id="flexRadioDefault2"
                             label="Site Seeing"
+                            className="mb-2"
+                            />
+                            <MDBCheckbox
+                                name="flexRadioDefault"
+                                id="flexRadioDefault10"
+                                label="Mountains"
+                                className="mb-2"
+                            />
+                            <MDBCheckbox
+                                name="flexRadioDefault"
+                                id="flexRadioDefault10"
+                                label="Oceans"
+                                className="mb-2"
+                            />
+                            <MDBCheckbox
+                                name="flexRadioDefault"
+                                id="flexRadioDefault10"
+                                label="Beaches"
+                                className="mb-2"
+                            />
+                            <MDBCheckbox
+                                name="flexRadioDefault"
+                                id="flexRadioDefault10"
+                                label="Forest"
+                                className="mb-2"
+                            />
+                            <MDBCheckbox
+                                name="flexRadioDefault"
+                                id="flexRadioDefault10"
+                                label="Desert"
+                                className="mb-2"
+                            />
+                            <MDBCheckbox
+                                name="flexRadioDefault"
+                                id="flexRadioDefault10"
+                                label="Snow & Ice"
+                                className="mb-2"
+                            />
+                            <MDBCheckbox
+                                name="flexRadioDefault"
+                                id="flexRadioDefault10"
+                                label="Safari"
+                                className="mb-2"
+                            />
+                            <MDBCheckbox
+                            name="flexRadioDefault"
+                            id="flexRadioDefault2"
+                            label="Staff"
+                            className="mb-2"
+                            />
+                            <MDBCheckbox
+                            name="flexRadioDefault"
+                            id="flexRadioDefault2"
+                            label="Star gazing"
+                            className="mb-2"
+                            />
+                            <MDBCheckbox
+                            name="flexRadioDefault"
+                            id="flexRadioDefault2"
+                            label="Wine tasting"
+                            className="mb-2"
+                            />
+                            <MDBCheckbox
+                            name="flexRadioDefault"
+                            id="flexRadioDefault2"
+                            label="Private Tours"
                             className="mb-2"
                             />
                         </Col>
@@ -243,6 +323,12 @@ export default function CardWithFeedback() {
                 <MDBCheckbox
                     name="flexRadioDefault"
                     id="flexRadioDefault10"
+                    label="Just Because"
+                    className="mb-2"
+                />
+                <MDBCheckbox
+                    name="flexRadioDefault"
+                    id="flexRadioDefault10"
                     label="Relaxing Getaway"
                     className="mb-2"
                 />
@@ -253,7 +339,7 @@ export default function CardWithFeedback() {
                     className="mb-2"
                 /><br/>
                 <p className="text-center">
-                  <strong>Additional Information you'd like to add?</strong>
+                  <strong>Any additional information you'd like to add:</strong><br/>(i.e. budget, special requests, etc.)
                 </p>
                 <MDBTextArea
                     className="form-control mb-4"
@@ -271,5 +357,11 @@ export default function CardWithFeedback() {
         </MDBCol>
       </MDBRow>
     </MDBContainer>
+    </FormWrapper>
   );
 }
+
+
+const FormWrapper = styled.div `
+    padding-top: 5vh;
+`

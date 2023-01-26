@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { SliderData } from './SliderData'
+import { SliderData } from '../data/SliderData'
 import { VscArrowRight, VscArrowLeft } from 'react-icons/vsc'
 
 export default function ImageSlider({ slides }) {

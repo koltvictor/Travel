@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { GalleryData } from './GalleryData'
+import { GalleryData } from '../data/GalleryData'
 import styled from 'styled-components';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
