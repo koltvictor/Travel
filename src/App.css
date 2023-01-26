@@ -141,3 +141,11 @@ h4 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.linkText {
+  color: rgb(38, 38, 38) !important;
+  padding: 3rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  background-color: rgba(185, 208, 255, .6) !important;
+  text-decoration: overline !important;
+}

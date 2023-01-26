@@ -7,16 +7,16 @@ export default function Navigation() {
     <div>
       <Nav className="justify-content-end">
         <Nav.Item>
-          <Nav.Link href="/travel">custom itinerary</Nav.Link>
+          <Nav.Link href="/travel" className="linkText">custom itinerary</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/gallery">gallery</Nav.Link>
+          <Nav.Link href="/gallery" className="linkText">gallery</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="/about">about</Nav.Link>
+          <Nav.Link href="/about" className="linkText">about</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="/contact">
+          <Nav.Link href="/contact" className="linkText">
             contact
           </Nav.Link>
         </Nav.Item>
