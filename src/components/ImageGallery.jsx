@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import Lightbox from 'react-image-lightbox'
 
 export default function ImageGallery() {
     const [photos, setPhotos] = useState([]);
@@ -36,6 +37,26 @@ export default function ImageGallery() {
         <Row md={columnsPerRow}>
             {getColumnsForRow()}
         </Row>
+
+        {/* {isOpen && (
+      <Lightbox
+        mainSrc={images[photoIndex]}
+        nextSrc={images[(photoIndex + 1) % images.length]}
+        prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+        onCloseRequest={() => this.setState({ isOpen: false })}
+        onMovePrevRequest={() =>
+          this.setState({
+            photoIndex: (photoIndex + images.length - 1) % images.length,
+          })
+        }
+        onMoveNextRequest={() =>
+          this.setState({
+            photoIndex: (photoIndex + 1) % images.length,
+          })
+        }
+      />
+    )} */}
+    
     </GalleryWrapper>
   )
 }

@@ -6,6 +6,9 @@ export default function Navigation() {
   return (
     <div>
       <Nav className="navBar">
+      <Nav.Item>
+          <Nav.Link href="/" className="linkText">🏠</Nav.Link>
+        </Nav.Item>
         <Nav.Item>
           <Nav.Link href="/travel" className="linkText">custom itinerary</Nav.Link>
         </Nav.Item>
