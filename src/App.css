@@ -137,8 +137,8 @@ h4 {
 .galleryImage {
   width: 100%;
   height: 100%;
-  /* padding: 2rem; */
   border-radius: 0% !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cardGrid{
@@ -147,13 +147,18 @@ h4 {
 
 .linkText {
   color: rgb(38, 38, 38) !important;
-  padding: 3rem !important;
+  margin-top: 2.5rem !important;
+  padding: 2rem !important;
   font-size: 1rem !important;
-  font-weight: 600 !important;
-  background-color: rgba(92, 255, 149, 0.6) !important;
+  background-color: rgba(168, 255, 198, 0.6) !important;
   text-decoration: overline !important;
 }
 
 .cardImage {
   border-radius: 0 !important;
+}
+
+.navBar {
+  justify-content: right;
+  
 }

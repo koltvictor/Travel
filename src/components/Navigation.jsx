@@ -5,7 +5,7 @@ export default function Navigation() {
 
   return (
     <div>
-      <Nav className="justify-content-end">
+      <Nav className="navBar">
         <Nav.Item>
           <Nav.Link href="/travel" className="linkText">custom itinerary</Nav.Link>
         </Nav.Item>
