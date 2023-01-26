@@ -17,9 +17,9 @@ export default function ImageGallery() {
     const getColumnsForRow = () => {
         let items = photos.map((image) => {
             return (
-                <Col>
-                    <Card>
-                        <Card.Img src={image.image} className="galleryImage"/>
+                <Col className="cardGrid">
+                    <Card className="cardImage">
+                        <Card.Img src={image.image} className="galleryImage" />
                     </Card>
                 </Col>
             );
