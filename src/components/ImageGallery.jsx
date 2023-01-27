@@ -2,10 +2,11 @@ import React from 'react'
 import { GalleryData } from '../data/GalleryData'
 import styled from 'styled-components';
 import { LightgalleryItem } from "react-lightgallery";
+import { Container } from 'react-bootstrap'
 
 export default function ImageGallery() {
   return (
-    <div className="galleryFullWrap">
+    <Container className="galleryFullWrap">
         <h4>Click on Images to Expand</h4>
         <GalleryWrapper>
             {GalleryData.map((photos) => {
@@ -16,7 +17,7 @@ export default function ImageGallery() {
                 )
             })}
         </GalleryWrapper>
-    </div>
+    </Container>
   )
 }
 

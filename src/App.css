@@ -157,8 +157,6 @@ h4 {
 .galleryFullWrap {
   margin-top: 10rem;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: center;
 }
