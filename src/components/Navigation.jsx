@@ -23,7 +23,7 @@ export default function Navigation({logo}) {
                   Partners
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/faqs">
                 FAQ's
                 </NavDropdown.Item>
               </NavDropdown>

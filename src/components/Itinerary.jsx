@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
 
 export default function Itinerary() {
     const goToTravel = () => {
@@ -9,7 +10,7 @@ export default function Itinerary() {
 
   return (
 
-    <ItineraryWrapper>
+    <Container>
         <div className="row">
             <div className="column">
                 <div className="columnA">
@@ -24,10 +25,10 @@ export default function Itinerary() {
                 </div>
             </div>
         </div>
-    </ItineraryWrapper>
+    </Container>
   )
 }
 
-const ItineraryWrapper = styled.div`
-    padding: 10rem 5rem 0rem 5rem;
-`
+// const ItineraryWrapper = styled.div`
+//     padding: 5vh 2.5vh 2vh 2.5vh;
+// `

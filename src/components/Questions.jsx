@@ -36,7 +36,7 @@ export default function CardWithFeedback() {
                   <strong>Itinerary Generator</strong>
                 </p>
                 <p>
-                  Just a few questions to get us pointed in the right direction
+                  Just a few questions to get us moving in the right direction
                 </p>
               </div>
 
@@ -57,16 +57,21 @@ export default function CardWithFeedback() {
                 <MDBTextArea className="mb-4" rows={1} />
                 <p className="text-center"><strong>Where would you like to go?</strong></p>
                 <CountrySelect />
+                <br/>
                 <p className="text-center">
                   <strong>When would you like to depart?</strong>
                 </p>
+                <div className="centeredInfo">
                 <DatePicker onChange={onChange} value={value} format="dd/MM/y" />
-                <br/><br/>
+                </div>
+                <br/>
                 <p className="text-center">
                   <strong>When would you like to return?</strong>
                 </p>
+                <div className="centeredInfo">
                 <DatePicker onChange={onChange2} value={value2} format="dd/MM/y" />
-                <br/><br/>
+                </div>
+                <br/>
                 <p className="text-center">
                   <strong>Choose some items that describe your trip</strong>
                 </p>

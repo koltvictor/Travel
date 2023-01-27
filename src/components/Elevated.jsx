@@ -1,10 +1,11 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
 import styled from 'styled-components';
 
 export default function Elevated() {
   return (
-    <ElevatedWrapper>
+    <Container>
         <div className="row">
         <div className="column">
             <div className="columnA">
@@ -19,7 +20,7 @@ export default function Elevated() {
             </div>
         </div>
         </div>
-    </ElevatedWrapper>
+    </Container>
   )
 }
 

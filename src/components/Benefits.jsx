@@ -1,11 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
 
 export default function Benefits() {
   return (
     <div>
-        <BenefitsWrapper>
+        <Container>
             <div className="row">
                 <div className="column">
                 <div className="columnA"><br/><br/><br/><br/>
@@ -21,11 +22,11 @@ export default function Benefits() {
                 </div>
             </div>
 
-        </BenefitsWrapper>
+        </Container>
     </div>
   )
 }
 
-const BenefitsWrapper = styled.div`
-    padding: 10rem 5rem 0rem 5rem;
-`
+// const BenefitsWrapper = styled.div`
+//     padding: 10rem 5rem 0rem 5rem;
+// `

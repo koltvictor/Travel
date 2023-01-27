@@ -22,6 +22,6 @@ export default function Contact() {
 
 const ContactWrapper = styled.div`
     display: flex;
-
+    background-color: #f1f1f1;
     padding: 10rem 5rem 0rem 5rem;
 `

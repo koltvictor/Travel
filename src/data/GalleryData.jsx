@@ -1,7 +1,6 @@
 export const GalleryData = [
     {
         image: 'https://i.imgur.com/ZSL5YTz.png',
-        loc: 'Pang Oung, Thailand'
     },
     {
         image: 'https://i.imgur.com/2xeW8Qf.png'
@@ -11,6 +10,18 @@ export const GalleryData = [
     },
     {
         image: 'https://i.imgur.com/23C661g.png'
+    },
+    {
+        image: 'https://i.imgur.com/xA9O1eb.png'
+    },
+    {
+        image: 'https://i.imgur.com/SVXsF7I.png'
+    },
+    {
+        image: 'https://i.imgur.com/NpMygeL.png'
+    },
+    {
+        image: 'https://i.imgur.com/GHB8PUW.png'
     },
     {
         image: 'https://i.imgur.com/cDZ286V.png'
