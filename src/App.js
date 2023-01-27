@@ -11,8 +11,8 @@ export default function App() {
   const location = useLocation();
   return (
     <div className="App">
-      <Logo className="logo" />
-      <Navigation />
+      {/* <Logo className="logo" /> */}
+      <Navigation logo={<Logo />} />
       <Routes Location={location} key={location.pathname}>
         <Route exact path="/" element={<Home />} />
         <Route path="/travel" element={<Travel />} />

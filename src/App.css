@@ -10,9 +10,9 @@ h4 {
 }
 
 .logo {
-  padding: 1rem;
+  /* padding: 1rem; */
   height: 10vh;
-  position: absolute;
+  /* position: absolute; */
   cursor: pointer;
 }
 
@@ -145,13 +145,15 @@ h4 {
   color: rgb(38, 38, 38) !important;
   margin-top: 2.5rem !important;
   padding: 1.3rem !important;
-  font-size: .75rem !important;
-  background-color: rgba(168, 255, 198, 0.6) !important;
+  font-size: 1vh !important;
+  /* background-color: rgba(168, 255, 198, 0.6) !important; */
   text-decoration: overline !important;
 }
 
 .navBar {
-  justify-content: right; 
+  justify-content: right !important; 
+  align-items: right !important;
+  text-align: right !important;
 }
 
 .galleryFullWrap {
@@ -159,4 +161,11 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.centeredInfo{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
