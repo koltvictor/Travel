@@ -10,7 +10,7 @@ export default function Itinerary() {
 
   return (
 
-    <Container>
+    <Container className="homeComponentsWrapper">
         <div className="row">
             <div className="column">
                 <div className="columnA">

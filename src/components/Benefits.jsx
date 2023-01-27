@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 export default function Benefits() {
   return (
     <div>
-        <Container>
+        <Container className="homeComponentsWrapper">
             <div className="row">
                 <div className="column">
                 <div className="columnA"><br/><br/><br/><br/>
