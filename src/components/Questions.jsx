@@ -9,6 +9,7 @@ import {
   MDBCol,
   MDBContainer,
   MDBIcon,
+  MDBInput,
   MDBRow,
   MDBTextArea,
 } from "mdb-react-ui-kit";
@@ -45,7 +46,11 @@ export default function CardWithFeedback() {
                 <p className="text-center">
                     <strong>Your name:</strong>
                 </p>
-                <MDBTextArea className="mb-4" rows={1} />
+                <MDBInput className="mb-4" rows={1} required />
+                <p className="text-center">
+                    <strong>Your email address:</strong>
+                </p>
+                <MDBInput className="mb-4" rows={1} required />
                 <p className="text-center">
                     <strong>Number in your party:</strong> <br/>(please designate number of adults and number of children)
                 </p>

@@ -8,8 +8,6 @@ import Typography from '@mui/material/Typography';
 import parse from 'autosuggest-highlight/parse';
 import { debounce } from '@mui/material/utils';
 
-// This key was created specifically for the demo in mui.com.
-// You need to create a new one for your application.
 const GOOGLE_MAPS_API_KEY = 'AIzaSyBHk2OdbQzyiXx5QJRnaOQ7Q4ixgEoPQ68';
 
 function loadScript(src, position, id) {
@@ -111,7 +109,7 @@ export default function GoogleMaps() {
         setInputValue(newInputValue);
       }}
       renderInput={(params) => (
-        <TextField {...params} label="Add a location" fullWidth />
+        <TextField {...params} label="Desired Destination" fullWidth />
       )}
       renderOption={(props, option) => {
         const matches =

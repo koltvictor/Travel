@@ -7,13 +7,15 @@ import { Container } from 'react-bootstrap'
 export default function ImageGallery() {
   return (
     <Container className="galleryFullWrap">
-        <h4>Click on Images to Expand</h4>
         <GalleryWrapper>
             {GalleryData.map((photos) => {
                 return (
+<div>
                     <LightgalleryItem src={photos.image} group="any" subHtml={photos.info}>
                         <img src={photos.image} alt={photos.info}  className="galleryImage" />
                     </LightgalleryItem>
+                    <p className="galleryImageText">{photos.loc}</p>
+                    </div>
                 )
             })}
         </GalleryWrapper>
@@ -24,5 +26,5 @@ export default function ImageGallery() {
 const GalleryWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 10rem 5rem 0rem 5rem;
+    grid-gap: 1rem;
 `
