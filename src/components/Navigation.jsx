@@ -9,7 +9,7 @@ export default function Navigation({logo}) {
   return (
     <div>
 
-      <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
+      <Navbar collapseOnSelect expand="lg" bg="white" variant="light" className="navBar">
         <Container>
         <Navbar.Brand href="/">{logo}</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

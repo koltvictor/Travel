@@ -151,6 +151,7 @@ h4 {
   justify-content: right !important; 
   align-items: right !important;
   text-align: right !important;
+  text-decoration: overline !important;
 }
 
 .galleryFullWrap {
