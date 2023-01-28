@@ -1,6 +1,7 @@
 export const GalleryData = [
     {
         image: 'https://i.imgur.com/ZSL5YTz.png',
+        loc: 'Pang Oung, Thailand',
     },
     {
         image: 'https://i.imgur.com/2xeW8Qf.png'

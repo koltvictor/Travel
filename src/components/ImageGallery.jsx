@@ -8,8 +8,7 @@ export default function ImageGallery() {
     <Container className="galleryFullWrap">
             {GalleryData.map((photos) => {
                 return (
-
-                    <LightgalleryItem src={photos.image} group="any" subHtml={photos.info}>
+                    <LightgalleryItem src={photos.image} subHtml={photos.info} appendSubHtmlTo=".lg-outer">
                         <img src={photos.image} alt={photos.info}  className="galleryImage" />
                     </LightgalleryItem>
                 )

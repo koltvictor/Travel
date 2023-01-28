@@ -14,7 +14,7 @@ export default function Navigation({logo}) {
         <Navbar.Brand href="/">{logo}</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="justify-content-end">
+            <Nav className="ms-auto">
               <Nav.Link href="/travel">custom itinerary</Nav.Link>
               <Nav.Link href="/gallery">gallery</Nav.Link>
               <NavDropdown title="about" id="collasible-nav-dropdown">

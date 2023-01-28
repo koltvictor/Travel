@@ -12,9 +12,8 @@ export default function Home() {
   return (
     <div>
         <ImageSlider slides={SliderData} />
-
-          <About />
-          <Container className="homeComponentsWrapper">
+        <About />
+        <Container className="homeComponentsWrapper">
           <Itinerary />
           <Benefits />
           <Elevated />
