@@ -7,9 +7,9 @@ export default function Benefits() {
         <Container className="internalComponentsWrapper">
             <div className="row">
                 <div className="column d-flex">
-                <Container className="columnA align-items-center justify-content-center">
+                <Container className="columnA d-flex align-items-center justify-content-center">
                     <h4>BENEFITS OF WORKING WITH TAILORED TRAVEL</h4>
-                    <p>Every client is a VIP, and every trip is meant to be remarkable. No matter where in the world you travel, you will be received as an honored guest and provided access to exclusive privileges, complimentary benefits, cutting-edge technology, and unmatched service.</p>
+                    <p className="componentText">Every client is a VIP, and every trip is meant to be remarkable. No matter where in the world you travel, you will be received as an honored guest and provided access to exclusive privileges, complimentary benefits, cutting-edge technology, and unmatched service.</p>
                 </Container>
                 </div>
                 <div className="column">

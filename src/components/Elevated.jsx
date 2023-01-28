@@ -11,9 +11,9 @@ export default function Elevated() {
             </Container>
         </div>
         <div className="column">
-            <Container className="columnB align-items-sm-center justify-content-center">
+            <Container className="columnB d-flex align-items-center justify-content-center">
                 <h4>ELEVATED EXPERIENCES</h4>
-                <p>Your preferences and interests are unique, and we believe you deserve to work with a travel company that can guide you through designing and executing extraordinary experiences. When you partner with BTA, you will work directly with our team of expert Virtuoso travel advisors to create fully customized itineraries based on your interests and budget.</p>
+                <p className="componentText">Your preferences and interests are unique, and we believe you deserve to work with a travel company that can guide you through designing and executing extraordinary experiences. When you partner with BTA, you will work directly with our team of expert Virtuoso travel advisors to create fully customized itineraries based on your interests and budget.</p>
             </Container>
         </div>
         </div>
