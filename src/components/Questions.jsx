@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router";
 import DatePicker from "react-date-picker";
 import {
-  MDBBtn,
   MDBCard,
   MDBCardBody,
-  MDBCardFooter,
   MDBCheckbox,
   MDBCol,
   MDBContainer,
@@ -18,13 +17,32 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components'
+import emailjs from '@emailjs/browser'
 
-export default function CardWithFeedback() {
+export default function Questions() {
     const [ value, onChange ] = useState(new Date());
     const [ value2, onChange2 ] = useState(new Date())
+    const form = useRef()
+    let navigate = useNavigate();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_3gqx6iw', 
+            'template_u54d3xr', 
+            e.target, 
+            'user_Jhf473QBsymPnicTrMVk1')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        navigate("/confirmation")
+    }
 
   return (
-    <FormWrapper>
+    <FormWrapper ref={form} onSubmit={sendEmail}>
     <MDBContainer>
       <MDBRow className="justify-content-center">
         <MDBCol size="6">
@@ -39,37 +57,35 @@ export default function CardWithFeedback() {
                   Just a few questions to get us moving in the right direction
                 </p>
               </div>
-
               <hr />
-
-              <form className="px-4" action="">
+              <form className="px-4" onSubmit={sendEmail}>
                 <p className="text-center">
                     <strong>Your name:</strong>
                 </p>
-                <MDBInput className="mb-4" rows={1} required />
+                <MDBInput className="mb-4" rows={1} required type="text" name="from_name" />
                 <p className="text-center">
                     <strong>Your email address:</strong>
                 </p>
-                <MDBInput className="mb-4" rows={1} required />
+                <MDBInput className="mb-4" rows={1} required type="email" name="email_address" />
                 <p className="text-center">
                     <strong>Number in your party:</strong> <br/>(please designate number of adults and number of children)
                 </p>
-                <MDBTextArea className="mb-4" rows={1} />
+                <MDBTextArea className="mb-4" rows={1} name="number_party" />
                 <p className="text-center"><strong>Where would you like to go?</strong></p>
-                <CountrySelect />
+                <CountrySelect value="location" />
                 <br/>
                 <p className="text-center">
                   <strong>When would you like to depart?</strong>
                 </p>
                 <div className="centeredInfo">
-                <DatePicker onChange={onChange} value={value} format="dd/MM/y" />
+                <DatePicker onChange={onChange} value={value} format="dd/MM/y" name="out_date" />
                 </div>
                 <br/>
                 <p className="text-center">
                   <strong>When would you like to return?</strong>
                 </p>
                 <div className="centeredInfo">
-                <DatePicker onChange={onChange2} value={value2} format="dd/MM/y" />
+                <DatePicker onChange={onChange2} value={value2} format="dd/MM/y" name="return_date" />
                 </div>
                 <br/>
                 <p className="text-center">
@@ -355,14 +371,12 @@ export default function CardWithFeedback() {
                     className="form-control mb-4"
                     rows="3"
                     placeholder="Type your message here..."
+                    type="text"
+                    name="message"
                 />
+                <input type="submit" value="send" />
               </form>
             </MDBCardBody>
-            <MDBCardFooter>
-              <div className="text-end">
-                <MDBBtn>Submit</MDBBtn>
-              </div>
-            </MDBCardFooter>
           </MDBCard>
         </MDBCol>
       </MDBRow>
