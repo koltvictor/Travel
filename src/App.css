@@ -22,6 +22,7 @@ h4 {
   display: flex;
   justify-content: center;
   padding: 5vh;
+  margin-left: 10vh;
 }
 
 .sliderImage {

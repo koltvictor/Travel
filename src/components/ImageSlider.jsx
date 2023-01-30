@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { SliderData } from '../data/SliderData'
 import { VscArrowRight, VscArrowLeft } from 'react-icons/vsc'
-import Container from 'react-bootstrap/Container'
 
 export default function ImageSlider({ slides }) {
     const [current, setCurrent] = useState(0)
