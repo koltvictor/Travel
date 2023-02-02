@@ -22,10 +22,12 @@ import emailjs from '@emailjs/browser'
 export default function Questions() {
     const [ value, onChange ] = useState(new Date());
     const [ value2, onChange2 ] = useState(new Date())
+    const [inputValue, setInputValue] = React.useState('');
     const form = useRef()
     let navigate = useNavigate();
 
     const sendEmail = (e) => {
+      console.log(e.target)
         e.preventDefault();
 
         emailjs.sendForm(
@@ -34,7 +36,7 @@ export default function Questions() {
             e.target, 
             'user_Jhf473QBsymPnicTrMVk1')
         .then((result) => {
-            console.log(result.text);
+            console.log(result);
         }, (error) => {
             console.log(error.text);
         });
@@ -73,7 +75,7 @@ export default function Questions() {
                 </p>
                 <MDBTextArea className="mb-4" rows={1} name="number_party" />
                 <p className="text-center"><strong>Where would you like to go?</strong></p>
-                <CountrySelect />
+                <CountrySelect inputValue={inputValue} setInputValue={setInputValue} name="location" />
                 <br/>
                 <p className="text-center">
                   <strong>When would you like to depart?</strong>

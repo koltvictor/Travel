@@ -24,12 +24,12 @@ function loadScript(src, position, id) {
 
 const autocompleteService = { current: null };
 
-export default function GoogleMaps() {
+export default function GoogleMaps({ inputValue, setInputValue }) {
   const [value, setValue] = React.useState(null);
-  const [inputValue, setInputValue] = React.useState('');
+
   const [options, setOptions] = React.useState([]);
   const loaded = React.useRef(false);
-
+// console.log(onChange)
   if (typeof window !== 'undefined' && !loaded.current) {
     if (!document.querySelector('#google-maps')) {
       loadScript(
