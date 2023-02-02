@@ -42,6 +42,7 @@ export default function Questions() {
     }
 
   return (
+
     <FormWrapper ref={form} onSubmit={sendEmail}>
     <MDBContainer>
       <MDBRow className="justify-content-center">
@@ -72,7 +73,7 @@ export default function Questions() {
                 </p>
                 <MDBTextArea className="mb-4" rows={1} name="number_party" />
                 <p className="text-center"><strong>Where would you like to go?</strong></p>
-                <CountrySelect value="location" />
+                <CountrySelect />
                 <br/>
                 <p className="text-center">
                   <strong>When would you like to depart?</strong>

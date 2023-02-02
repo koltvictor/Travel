@@ -11,9 +11,9 @@ import Container from 'react-bootstrap/Container'
 export default function Home() {
   return (
     <div>
-        <ImageSlider slides={SliderData} />
-        <About />
-        <Container className="homeComponentsWrapper">
+        <Container fluid className="homeComponentsWrapper">
+          <ImageSlider slides={SliderData} />
+          <About />
           <Itinerary />
           <Benefits />
           <Elevated />
