@@ -9,9 +9,10 @@ export default function Video() {
             playing={true}
             width='100%'
             height='100%'
-            controls={false}
+            controls={true}
             onEnded={() => this.refs.player.seekTo(0)}
             muted={true}
+            loop={true}
         />
     </div>
   )
