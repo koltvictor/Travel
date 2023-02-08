@@ -205,3 +205,8 @@ h4 {
   padding: 2vh;
   text-align: center;
 }
+
+.videoPlayer {
+  position: relative;
+  height: 30vh;
+}
