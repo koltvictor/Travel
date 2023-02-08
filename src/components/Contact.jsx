@@ -5,14 +5,14 @@ export default function Contact() {
   return (
     <ContactWrapper>
         <div className="row">
-        <div class="column">
-            <div class="column1">Email</div>
+        <div className="column">
+            <div className="column1">Email</div>
         </div>
         <div className="column">
-            <div class="column2">Phone</div>
+            <div className="column2">Phone</div>
         </div>
         <div className="column">
-            <div class="column3">Address</div> 
+            <div className="column3">Address</div> 
         </div>
         </div>
     </ContactWrapper>
