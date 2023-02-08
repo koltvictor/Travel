@@ -392,4 +392,5 @@ export default function Questions() {
 
 const FormWrapper = styled.div `
     padding-top: 5vh;
+    padding-bottom: 15vh;
 `
