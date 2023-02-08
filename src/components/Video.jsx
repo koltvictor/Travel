@@ -13,7 +13,7 @@ export default function Video() {
             onEnded={() => this.refs.player.seekTo(0)}
             muted={true}
             loop={true}
-            playsinline={true}
+            playsInLine={true}
         />
     </div>
   )
