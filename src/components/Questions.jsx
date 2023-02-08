@@ -12,7 +12,7 @@ import {
   MDBRow,
   MDBTextArea,
 } from "mdb-react-ui-kit";
-import CountrySelect from "./CountrySelect";
+// import CountrySelect from "./CountrySelect";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -22,7 +22,7 @@ import emailjs from '@emailjs/browser'
 export default function Questions() {
     const [ value, onChange ] = useState(new Date());
     const [ value2, onChange2 ] = useState(new Date())
-    const [inputValue, setInputValue] = React.useState('');
+    // const [inputValue, setInputValue] = React.useState('');
     const form = useRef()
     let navigate = useNavigate();
 
@@ -73,9 +73,10 @@ export default function Questions() {
                 <p className="text-center">
                     <strong>Number in your party:</strong> <br/>(please designate number of adults and number of children)
                 </p>
-                <MDBTextArea className="mb-4" rows={1} name="number_party" />
+                <MDBInput className="mb-4" rows={1} name="number_party" />
                 <p className="text-center"><strong>Where would you like to go?</strong></p>
-                <CountrySelect inputValue={inputValue} setInputValue={setInputValue} name="location" />
+                {/* <CountrySelect inputValue={inputValue} setInputValue={setInputValue} name="location" /> */}
+                <MDBInput className="mb-4" rows={1} required type="text" name="location" />
                 <br/>
                 <p className="text-center">
                   <strong>When would you like to depart?</strong>
