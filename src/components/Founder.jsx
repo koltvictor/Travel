@@ -9,10 +9,10 @@ export default function Founder() {
     <div>
         {FounderInfo.map((item) => {
             return (
-                <div key={item.id}>
+                <div key={item.id} className="founderInfo">
                     <h1>{item.name}</h1>
                     <h2>{item.title}</h2>
-                    <img src={item.image} alt={item.name} onClick={toBio} />
+                    <img src={item.image} alt={item.name} onClick={toBio} className="founderImg" />
                 </div>
             )
         })}

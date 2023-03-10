@@ -16,7 +16,13 @@ export default function Navigation({logo}) {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="/travel">custom itinerary</Nav.Link>
-              <Nav.Link href="/gallery">gallery</Nav.Link>
+              {/* <Nav.Link href="/gallery">gallery</Nav.Link> */}
+              <NavDropdown title="gallery" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="/gallery">photos</NavDropdown.Item>
+                <NavDropdown.Item href="/pdfs">
+                  example itineraries
+                </NavDropdown.Item>
+              </NavDropdown>
               <NavDropdown title="about" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/about">Our Story</NavDropdown.Item>
                 <NavDropdown.Item href="/partners">

@@ -5,8 +5,8 @@ import Navigation from "./components/Navigation";
 import About from "./pages/About";
 import Logo from "./components/Logo";
 import Contact from "./pages/Contact";
-import Bio from "./pages/Bio";
 import Confirmation from "./pages/Confirmation";
+import PDFs from "./pages/PDFs";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import Gallery from "./pages/Gallery";
@@ -22,8 +22,8 @@ export default function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/bio" element={<Bio />} />
         <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/pdfs" element={<PDFs />} />
       </Routes>
     </div>
   );
