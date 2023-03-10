@@ -99,217 +99,223 @@ export default function Questions() {
                     <Row>
                         <Col>
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="helicopters"
+                            id="helicopters"
                             label="Helicopters"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="surfing"
+                            id="surfing"
                             label="Surfing"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="snorkeling"
+                            id="snorkeling"
                             label="Snorkeling"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="relaxing"
+                            id="relaxing"
                             label="Relaxing"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="hiking"
+                            id="hiking"
                             label="Hiking"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="fishing"
+                            id="fishing"
                             label="Fishing"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="camping"
+                            id="camping"
                             label="Camping"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="glamping"
+                            id="glamping"
+                            label="Glamping"
+                            className="mb-2"
+                            />
+                            <MDBCheckbox
+                            name="ultraLuxury"
+                            id="ultraLuxury"
                             label="Ultra Luxury"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="museums"
+                            id="museums"
                             label="Museums"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="art"
+                            id="art"
                             label="Art"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="privatePlane"
+                            id="privatePlane"
                             label="Private Plane"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="skiing"
+                            id="skiiing"
                             label="Skiing"
                             className="mb-2"
                             />                
                         </Col>
                         <Col>
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="bicycling"
+                            id="bicycling"
                             label="Bicycling"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="paraSailing"
+                            id="paraSailing"
                             label="Para Sailing"
                             className="mb-2"
                             />
 
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="paraGliding"
+                            id="paraGliding"
                             label="Para Gliding"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="hotAirBalloon"
+                            id="hotAirBalloon"
                             label="Hot Air Ballooning"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="yacht"
+                            id="yacht"
                             label="Yachting/Sailing"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="zipline"
+                            id="zipline"
                             label="Ziplining"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="foodie"
+                            id="foodie"
                             label="Food/Foodie"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="trains"
+                            id="trains"
                             label="Trains"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="historicSites"
+                            id="historicSites"
                             label="Historic Sites"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="citySights"
+                            id="citySights"
                             label="City Sights"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault1"
+                            name="shopping"
+                            id="shopping"
                             label="Shopping"
+                            className="mb-2"
+                            />
+                            <MDBCheckbox
+                            name="starGazing"
+                            id="starGazing"
+                            label="Star Gazing"
                             className="mb-2"
                             />
                         </Col>
                         <Col>
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="siteSeeing"
+                            id="siteSeeing"
                             label="Site Seeing"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                                name="flexRadioDefault"
-                                id="flexRadioDefault10"
+                                name="mountains"
+                                id="mountains"
                                 label="Mountains"
                                 className="mb-2"
                             />
                             <MDBCheckbox
-                                name="flexRadioDefault"
-                                id="flexRadioDefault10"
+                                name="oceans"
+                                id="oceans"
                                 label="Oceans"
                                 className="mb-2"
                             />
                             <MDBCheckbox
-                                name="flexRadioDefault"
-                                id="flexRadioDefault10"
+                                name="beaches"
+                                id="beaches"
                                 label="Beaches"
                                 className="mb-2"
                             />
                             <MDBCheckbox
-                                name="flexRadioDefault"
-                                id="flexRadioDefault10"
+                                name="forests"
+                                id="forests"
                                 label="Forest"
                                 className="mb-2"
                             />
                             <MDBCheckbox
-                                name="flexRadioDefault"
-                                id="flexRadioDefault10"
+                                name="desert"
+                                id="desert"
                                 label="Desert"
                                 className="mb-2"
                             />
                             <MDBCheckbox
-                                name="flexRadioDefault"
-                                id="flexRadioDefault10"
+                                name="snowIce"
+                                id="snowIce"
                                 label="Snow & Ice"
                                 className="mb-2"
                             />
                             <MDBCheckbox
-                                name="flexRadioDefault"
-                                id="flexRadioDefault10"
+                                name="safari"
+                                id="safrari"
                                 label="Safari"
                                 className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="staff"
+                            id="staff"
                             label="Staff"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
-                            label="Star gazing"
-                            className="mb-2"
-                            />
-                            <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="wineTasting"
+                            id="wineTasting"
                             label="Wine tasting"
                             className="mb-2"
                             />
                             <MDBCheckbox
-                            name="flexRadioDefault"
-                            id="flexRadioDefault2"
+                            name="privateTours"
+                            id="privateTours"
                             label="Private Tours"
                             className="mb-2"
                             />
@@ -321,50 +327,50 @@ export default function Questions() {
                   <strong>Occasion?</strong>
                 </p>
                 <MDBCheckbox
-                    name="flexRadioDefault"
-                    id="flexRadioDefault10"
+                    name="anniversary"
+                    id="anniversary"
                     label="Anniversary"
                     className="mb-2"
                 />
                 <MDBCheckbox
-                    name="flexRadioDefault"
-                    id="flexRadioDefault10"
+                    name="bachelorParty"
+                    id="bachlorParty"
                     label="Bachelor/ette Party"
                     className="mb-2"
                 />
                 <MDBCheckbox
-                    name="flexRadioDefault"
-                    id="flexRadioDefault10"
+                    name="birthday"
+                    id="birthday"
                     label="Birthday"
                     className="mb-2"
                 />
                 <MDBCheckbox
-                    name="flexRadioDefault"
-                    id="flexRadioDefault10"
+                    name="business"
+                    id="business"
                     label="Business Trip"
                     className="mb-2"
                 />
                 <MDBCheckbox
-                    name="flexRadioDefault"
-                    id="flexRadioDefault10"
+                    name="family"
+                    id="family"
                     label="Family Vacation"
                     className="mb-2"
                 />
                 <MDBCheckbox
-                    name="flexRadioDefault"
-                    id="flexRadioDefault10"
+                    name="justBecause"
+                    id="justBecause"
                     label="Just Because"
                     className="mb-2"
                 />
                 <MDBCheckbox
-                    name="flexRadioDefault"
-                    id="flexRadioDefault10"
+                    name="getAway"
+                    id="getAway"
                     label="Relaxing Getaway"
                     className="mb-2"
                 />
                 <MDBCheckbox
-                    name="flexRadioDefault"
-                    id="flexRadioDefault10"
+                    name="romantic"
+                    id="romantic"
                     label="Romantic Getaway"
                     className="mb-2"
                 /><br/>

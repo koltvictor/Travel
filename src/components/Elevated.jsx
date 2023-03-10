@@ -1,12 +1,15 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
+import { Link } from 'react-router-dom'
 
 export default function Elevated() {
   return (
     <Container className="internalComponentsWrapper">
         <div className="row">
         <div className="column d-flex align-items-center justify-content-center col-md-6">
+          <Link to="/gallery">
                 <img src="https://i.imgur.com/yANhDR8.png" alt="Italy" className="itineraryImage"/>
+                </Link>
         </div>
         <div className="column d-flex align-items-center justify-content-center col-md-6">
                 <h4>ELEVATED EXPERIENCES</h4>

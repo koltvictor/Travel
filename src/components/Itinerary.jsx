@@ -1,6 +1,7 @@
 import React from 'react'
 // import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
+import { Link } from 'react-router-dom'
 
 export default function Itinerary() {
     // const goToTravel = () => {
@@ -31,7 +32,9 @@ export default function Itinerary() {
               <div className="row">
 
                   <div className="column d-flex align-items-center justify-content-center col-md-6">
+                    <Link to="/travel">
                   <img src="https://i.imgur.com/ZSL5YTz.png" alt="Pang Oung, Thailand" className="itineraryImage" />
+                    </Link>
                   </div>
                   <div className="column d-flex align-items-center justify-content-center col-md-6">
                       <h4>UNIQUELY TAILORED CUSTOM ITINERARIES</h4>

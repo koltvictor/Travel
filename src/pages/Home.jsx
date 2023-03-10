@@ -17,7 +17,7 @@ export default function Home() {
           <Video />
           <About />
           <Itinerary />
-          <Benefits />
+          {/* <Benefits /> */}
           <Elevated />
         </Container>
         <Contact />

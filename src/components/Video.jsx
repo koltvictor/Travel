@@ -5,7 +5,7 @@ export default function Video() {
   return (
     <div className="videoPlayer">
         <ReactPlayer
-            url='https://youtu.be/SQPTT7WqUo4'
+            url='https://youtu.be/hhwa17z_0PA'
             playing={true}
             width='100%'
             height='100%'
