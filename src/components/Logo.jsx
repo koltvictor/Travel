@@ -6,7 +6,7 @@ export default function Logo() {
     }
   return (
     <div>
-        <img src="https://i.imgur.com/rFwIeqw.png" alt="logo" className="logo" onClick={goHome} />
+        <img src="https://i.imgur.com/u4PJ6v3.png" alt="logo" className="logo" onClick={goHome} />
     </div>
   )
 }
