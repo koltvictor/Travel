@@ -17,6 +17,7 @@ h5 {
 .logo {
   height: 15vh;
   cursor: pointer;
+  margin-left: -15rem;
 }
 
 .slider {
@@ -37,7 +38,7 @@ h5 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.right-arrow {
+/* .right-arrow {
   position: absolute;
   top: 17vh;
   right: 20vh;
@@ -55,7 +56,7 @@ h5 {
   color: #000;
   z-index: 10;
   cursor: pointer;
-}
+} */
 
 .slide {
   opacity: 0;
@@ -161,6 +162,7 @@ h5 {
   align-items: right !important;
   text-align: right !important;
   text-decoration: overline !important;
+  margin-right: -15rem !important;
 }
 
 .galleryFullWrap {
@@ -248,4 +250,19 @@ h5 {
   height: 100%;
   border: 1px solid #000;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.detailsImg1{
+  width: 50%;
+  height: 50%;
+}
+
+.detailsImg2{
+  width: 50%;
+  height: 50%;
+}
+
+.detailsImg3{
+  width: 50%;
+  height: 50%;
 }

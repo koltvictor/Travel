@@ -7,6 +7,7 @@ import Logo from "./components/Logo";
 import Contact from "./pages/Contact";
 import Confirmation from "./pages/Confirmation";
 import PDFs from "./pages/PDFs";
+import PDFdetails from "./pages/PDFdetails";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import Gallery from "./pages/Gallery";
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/confirmation" element={<Confirmation />} />
         <Route path="/pdfs" element={<PDFs />} />
+        <Route path="/:id" element={<PDFdetails />} />
       </Routes>
     </div>
   );
