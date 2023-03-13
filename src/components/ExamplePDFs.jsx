@@ -1,6 +1,5 @@
 import React from 'react'
 import { Examples } from '../data/Examples'
-import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 
 export default function ExamplePDFs() {
@@ -11,16 +10,16 @@ export default function ExamplePDFs() {
                 <Container className="internalComponentsWrapper">
                     <div key={example.id} className="row">
                         <div className="column d-flex align-items-center justify-content-center col-md-6">
-                            <Link to={example.id}>
+                            <a href={`/${example.id}`}>
                                 <img src={example.imageLink} alt={example.location} className="pdfImg" />
-                             </Link>
+                             </a>
                         </div>
                         <div className="column d-flex align-items-center justify-content-center col-md-6">
                             <h4>{example.location}</h4>
                             {/* <h4>{example.season}</h4> */}
                         </div>
                             <div className="column d-flex align-items-center justify-content-center col-md-6">
-                            <h5>{example.description}</h5>
+                            <p className="componentText">{example.description}</p>
                         </div>
                     </div>
                 </Container>
