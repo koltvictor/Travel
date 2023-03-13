@@ -17,8 +17,8 @@ export default function ExamplePDFs() {
                         <div className="column d-flex align-items-center justify-content-center col-md-6">
                             <h4>{example.location}</h4>
                             {/* <h4>{example.season}</h4> */}
-                        </div>
-                            <div className="column d-flex align-items-center justify-content-center col-md-6">
+                        {/* </div> */}
+                            {/* <div className="column d-flex align-items-center justify-content-center col-md-6"> */}
                             <p className="componentText">{example.description}</p>
                         </div>
                     </div>
