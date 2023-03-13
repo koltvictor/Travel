@@ -6,13 +6,13 @@ export default function Contact() {
     <ContactWrapper>
         <div className="row">
         <div className="column">
-            <div className="column1">Email</div>
+            <div className="column1">Email<br/>kolt@koltdesigns.com</div>
         </div>
         <div className="column">
-            <div className="column2">Phone</div>
+            <div className="column2">Phone<br/>917.285.3000</div>
         </div>
         <div className="column">
-            <div className="column3">Address</div> 
+            <div className="column3">Address<br/>New York City, NY</div> 
         </div>
         </div>
     </ContactWrapper>
